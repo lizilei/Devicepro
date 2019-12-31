@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_item_margin"
+        android:layout_marginTop="@dimen/fragment_item_margin"
+        android:layout_marginBottom="@dimen/fragment_item_margin"
+        >
+
+        <TextView
+            android:id="@+id/tv_one_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="型号:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_one_device_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/tv_one_device_name_left"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:textColor="@color/commonly_text_color3"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/fragment_road_ak_add_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/device_detials_bg"
+            android:gravity="center"
+            android:maxWidth="220dp"
+            android:minWidth="100dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="添加+"
+            android:textAllCaps="false"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_two_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="编号:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_two_device_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_two_device_name_left"
+            android:text=""
+            android:textColor="@color/commonly_text_color3"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:visibility="visible" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_three_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="制造厂家:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_three_device_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_three_device_name_left"
+            android:text=""
+            android:textColor="@color/commonly_text_color3"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_four_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="接口类型:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_four_device_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_four_device_name_left"
+            android:text=""
+            android:textColor="@color/commonly_text_color3"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:visibility="visible" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_five_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="接口用途:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_five_device_name_right"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_toRightOf="@+id/tv_five_device_name_left"
+            android:background="@drawable/device_detials_bg"
+            android:text=""
+            android:textColor="@color/commonly_text_color3"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_six_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="铅封日期:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_six_device_name_right"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_toRightOf="@+id/tv_six_device_name_left"
+            android:background="@drawable/device_detials_bg"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:textColor="@color/commonly_text_color3"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_seven_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/commonly_text_color3"
+            android:text="端子箱:"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_seven_device_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_seven_device_name_left"
+            android:text=""
+            android:textColor="@color/commonly_text_color3"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/fragment_item_text_size"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_seven__device_right"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_seven_device_name_left"
+            android:background="@drawable/device_detials_bg"
+            android:focusable="true"
+            android:hint=""
+            android:maxLength="100"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

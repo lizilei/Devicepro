@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_device_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DeviceDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="设备详情一"
+                android:textColor="@color/sbc_page_number_text"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fragment_one_device_item_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/fragment_one_device_item_one_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="设备识别代码"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/fragment_one_device_item_one_select_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_toRightOf="@+id/fragment_one_device_item_one_name_tv"
+                    android:background="@color/white"
+                    android:hint="请输入设备识别代码,数字和字母组合"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:digits="01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:maxLength="100"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/sbc_list_item"></View>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/fragment_device_details_one_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+

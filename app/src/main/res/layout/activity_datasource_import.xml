@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main"
+        android:orientation="vertical">
+
+        <cn.com.sgcc.dev.customeView.RoundedRectProgressBar
+            android:id="@+id/round_progressBar"
+            android:layout_width="500px"
+            android:layout_height="36px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            app:backColor="#E6E6E6"
+            app:barColor="#33CC99"
+            app:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="20px"
+            android:gravity="center"
+            android:text="正在导入数据，请稍候…"
+            android:textColor="@color/color_white"
+            android:textSize="24px" />
+    </LinearLayout>
+
+
+</LinearLayout>

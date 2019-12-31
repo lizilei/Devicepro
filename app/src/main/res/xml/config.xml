@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+    id="io.cordova.hellocordova"
+    version="0.0.1">
+    <preference
+        name="loglevel"
+        value="DEBUG" />
+    <preference
+        name="ShowTitle"
+        value="true" />
+    <preference
+        name="SetFullscreen"
+        value="false" />
+    <!-- 系统插件 start-->
+    <feature name="Whitelist">
+        <param
+            name="android-package"
+            value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <feature name="Camera">
+        <param
+            name="android-package"
+            value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Battery">
+        <param
+            name="android-package"
+            value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="Contacts">
+        <param
+            name="android-package"
+            value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <feature name="Device">
+        <param
+            name="android-package"
+            value="org.apache.cordova.device.Device" />
+    </feature>
+
+    <feature name="CordovaUap">
+        <param name="android-package" value="org.zywx.wbpalmstar.plugin.cordova.CordovaUap" />
+    </feature>
+
+    <feature name="File">
+        <param
+            name="android-package"
+            value="org.apache.cordova.file.FileUtils" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <!--<feature name="Geolocation">-->
+        <!--<param-->
+            <!--name="android-package"-->
+            <!--value="org.apache.cordova.geolocation.Geolocation" />-->
+    <!--</feature>-->
+
+    <feature name="Geolocation">
+        <param name="android-package"
+               value="org.apache.cordova.geolocation.GeoBroker" />
+    </feature>
+
+
+    <feature name="Globalization">
+        <param
+            name="android-package"
+            value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+
+    <feature name="InAppBrowser">
+        <param
+            name="android-package"
+            value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Media">
+        <param
+            name="android-package"
+            value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="Capture">
+        <param
+            name="android-package"
+            value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param
+            name="android-package"
+            value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="FileTransfer">
+        <param
+            name="android-package"
+            value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="SplashScreen">
+        <param
+            name="android-package"
+            value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <feature name="Vibration">
+        <param
+            name="android-package"
+            value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="Accelerometer">
+        <param
+            name="android-package"
+            value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Compass">
+        <param
+            name="android-package"
+            value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+
+
+    <!-- 系统插件  end -->
+
+
+    <!-- 自定义插件  start -->
+
+
+    <!-- 用户自定义插件 start-->
+<feature name="Notification">
+    <param name="android-package" value="com.dlxx.mam.plugins.Notification" />
+</feature>
+<feature name="loadconfig">
+    <param name="android-package" value="com.dlxx.mam.plugins.LoadConfig" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="fetchMessage">
+    <param name="android-package" value="com.dlxx.mam.plugins.MessageCenter" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="watchmessage">
+    <param name="android-package" value="com.dlxx.mam.plugins.MessageWatchListener" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="fetchMessage2">
+    <param name="android-package" value="com.dlxx.mam.plugins.MessageCenter2" />
+</feature>
+<feature name="watchmessage2">
+    <param name="android-package" value="com.dlxx.mam.plugins.MessageWatchListener2" />
+</feature>
+<feature name="Phone">
+    <param name="android-package" value="com.dlxx.mam.plugins.PhoneCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="Forward">
+    <param name="android-package" value="com.dlxx.mam.plugins.ForwardCordovaPlugins" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="DLFileTransferCordovaPlugin">
+    <param name="android-package" value="com.dlxx.mam.plugins.FileTransferCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="DLFileInstallCordovaPlugin">
+    <param name="android-package" value="com.dlxx.mam.plugins.FileInstallCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="EventUpload">
+    <param name="android-package" value="com.dlxx.mam.plugins.UserEventUploadCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="SetAppConfig">
+    <param name="android-package" value="com.dlxx.mam.plugins.SetAppConfigCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="RequestHeader">
+    <param name="android-package" value="com.dlxx.mam.plugins.GetRequestHeaderCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<!-- Sql 插件 -->
+<feature name="SQLiteCordovaPlugin">
+        <param name="android-package" value="com.dlxx.mam.plugins.SQLiteCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+
+<feature name="netTrafficStat">
+    <param name="android-package" value="com.dlxx.mam.plugins.NetTrafficStatPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="watchTraffic">
+    <param name="android-package" value="com.dlxx.mam.plugins.TrafficWatchListener" />
+    <param name="onload" value="true"/>
+</feature>
+
+<feature name="DLFileBreakpointsTransferCordovaPlugin">
+    <param name="android-package" value="com.dlxx.mam.plugins.FileBreakpointsTransferCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="vfs">
+    <param name="android-package" value="com.dlxx.mam.plugins.VfsPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="Time">
+    <param name="android-package" value="com.dlxx.mam.plugins.TimeCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="ContentUpload">
+    <param name="android-package" value="com.dlxx.mam.plugins.AppContentUploadCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="ContentCompression">
+    <param name="android-package" value="com.dlxx.mam.plugins.AppContentCompressionCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+    <!--多张图片选择器-->
+<feature name="ImageSelectPlugin">
+    <param name="android-package" value="com.dlxx.mam.plugins.OpenGalleryCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="IdentityScan">
+    <param name="android-package" value="com.dlxx.mam.plugins.IdentificationCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="AppMessage">
+    <param name="android-package" value="com.dlxx.mam.plugins.AppMessageCordovaPlugin" />
+</feature>
+<feature name="Calander">
+    <param name="android-package" value="com.dlxx.mam.plugins.CalanderCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="KeyValue">
+    <param name="android-package" value="com.dlxx.mam.plugins.KeyValueCordovaPlugin" />
+</feature>
+<feature name="gps">
+    <param name="android-package" value="com.dlxx.mam.plugins.GpsCordovaPlugin" />
+</feature>
+<feature name="Contracts">
+    <param name="android-package" value="com.dlxx.mam.plugins.ContractsCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="AppMenu">
+    <param name="android-package" value="com.dlxx.mam.plugins.AppMenuCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="Share">
+    <param name="android-package" value="com.dlxx.mam.plugins.ShareCordovaPlugin" />
+</feature>
+<feature name="DateTimePicker">
+    <param name="android-package" value="com.dlxx.mam.plugins.DateTimePickerCordovaPlugin" />
+    <param name="onload" value="true"/>
+</feature>
+<feature name="AppServerUpload">
+    <param name="android-package" value="com.dlxx.mam.plugins.ToAppServerFileUploadCordovaPlugin" />
+</feature>
+<feature name="OnlineVideo">
+    <param name="android-package" value="com.dlxx.mam.plugins.AppOnlineVideoPlugin" />
+</feature>
+<feature name="GetLBS">
+    <param name="android-package" value="com.dlxx.mam.plugins.GetLocationCordovaPlugin" />
+</feature>
+    <feature name="LocationGathering">
+        <param name="android-package" value="com.dlxx.mam.plugins.LocationGatheringCordovaPlugin" />
+    </feature>
+    <feature name="DownloadKnowledge">
+        <param name="android-package" value="com.dlxx.mam.plugins.DownloadKnowledgePlugin" />
+    </feature>
+    <feature name="ContactUtils">
+        <param name="android-package" value="com.dlxx.mam.plugins.AndroidOSContactPlugin" />
+    </feature>
+    <feature name="International">
+        <param name="android-package" value="com.dlxx.mam.plugins.CordovaInternationalPlugin" />
+    </feature>
+    <!--获取已安装应用插件-->
+    <feature name="getLocalApp">
+        <param name="android-package" value="com.dlxx.mam.plugins.LocalAppPlugin" />
+    </feature>
+
+    <!--获取设备信息-->
+    <feature name="devicemanage">
+        <param name="android-package" value="com.dlxx.mam.plugins.DeviceManagerPlugin" />
+    </feature>
+
+    <feature name="SearchApp">
+        <param name="android-package" value="com.dlxx.mam.plugins.SearchApplicationPlugin" />
+    </feature>
+
+    <!--下载管理插件-->
+    <feature name="appfilemanage">
+        <param name="android-package" value="com.dlxx.mam.plugins.AppFileManagerPlugin" />
+    </feature>
+
+    <preference name="android-windowSoftInputMode" value="adjustResize" />
+
+<!-- 自定义插件 end-->
+    <content src="index.html" />
+    <access origin="*" />
+
+    <!-- 轨迹-->
+    <feature name="trackPlugin">
+        <param name="android-package" value="com.dlxx.mam.plugins.trackPlugin" />
+    </feature>
+    <!-- 轨迹-->
+
+    <!-- cfca证书-->
+    <feature name="CfcaPlugin">
+        <param name="android-package" value="com.dlxx.mam.plugins.CfcaPlugin" />
+    </feature>
+    <!--  cfca证书-->
+
+    <feature name="Rfid">
+        <param name="android-package"
+               value="com.dlxx.mam.plugins.RfidCordovaPlugin" />
+    </feature>
+
+
+    <feature name="Bluetooth">
+        <param name="android-package"
+               value="com.dlxx.mam.plugins.BluetoothCordovaPlugin" />
+    </feature>
+
+    <allow-intent href="market:*" />
+
+    <name>电力信息</name>
+
+
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author
+        email="dev@cordova.apache.org"
+        href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+
+    <access origin="*" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

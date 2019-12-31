@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">运维管理</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hint1">必填项，请选择</string>
+    <string name="hint2">必填项，请输入或选择</string>
+    <string name="hint3">必填项，请输入</string>
+    <string name="hint4">加载失败，点击屏幕试试！</string>
+    <string name="hint5">请选择</string>
+    <string name="hint6"></string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+

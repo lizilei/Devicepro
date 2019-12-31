@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_one_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="通道类型:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_one_device_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="36px"
+            android:layout_marginLeft="20px"
+            android:paddingLeft="6px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/device_detials_bg"
+            android:layout_toRightOf="@+id/tv_one_device_name_left"
+            android:layout_toLeftOf="@+id/fragment_road_ak_add_bt"
+            android:text=""
+            android:hint="@string/hint1"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size"
+            />
+
+        <Button
+            android:id="@+id/fragment_road_ak_add_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="34px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/device_detials_bg"
+            android:gravity="center"
+            android:maxWidth="220px"
+            android:minWidth="100px"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:text="添加+"
+            android:textAllCaps="false"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="18px"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_one_device_name_right"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_one_device_name_left"
+            android:layout_toLeftOf="@+id/fragment_road_ak_add_bt"
+            android:layout_marginRight="20px"
+            android:background="@drawable/device_detials_bg"
+            android:focusable="true"
+            android:hint=""
+            android:maxLength="500"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/sbc_page_number_text"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="是否复用："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <CheckBox
+            android:id="@+id/cb_end_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="是"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <CheckBox
+            android:id="@+id/cb_end_false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8px"
+            android:text="否"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_three_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="通道装置型号:"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_three_device_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_marginLeft="20px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/device_detials_bg"
+            android:layout_toRightOf="@+id/tv_three_device_name_left"
+            android:text="平阴站220kV#主变NSR371母线保护装置"
+            android:textSize="16px"
+            android:visibility="gone"
+             />
+
+
+        <EditText
+            android:id="@+id/et_three_device_name_right"
+            android:layout_width="match_parent"
+            android:layout_height="36px"
+            android:layout_centerVertical="true"
+            android:paddingLeft="6px"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_three_device_name_left"
+            android:background="@drawable/device_detials_bg"
+            android:focusable="true"
+            android:hint=""
+            android:maxLength="500"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_item_margin">
+
+        <TextView
+            android:id="@+id/tv_four_device_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="通道类型:"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_four_device_name_right"
+            android:layout_width="match_parent"
+            android:layout_height="36px"
+            android:layout_marginLeft="20px"
+            android:paddingLeft="6px"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/device_detials_bg"
+            android:layout_toRightOf="@+id/tv_four_device_name_left"
+            android:text="平阴站220kV#主变"
+            android:textSize="@dimen/fragment_item_text_size"
+            />
+
+
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_four_device_name_right"
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_four_device_name_left"
+            android:layout_marginRight="20px"
+            android:background="@drawable/device_detials_bg"
+            android:focusable="true"
+            android:hint=""
+            android:maxLength="500"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/sbc_page_number_text"
+            android:textSize="@dimen/fragment_item_text_size" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

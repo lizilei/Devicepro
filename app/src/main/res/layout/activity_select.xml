@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.SelectActivity">
+
+    <include
+        android:id="@+id/app_main"
+        layout="@layout/app_bar_mainss" />
+
+    <cn.com.sgcc.dev.view.viewinterface.NoScrollGridview
+        android:id="@+id/yuguo_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_main"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="8px"
+        android:layout_marginTop="8px"
+        android:horizontalSpacing="14px"
+        android:numColumns="3"
+        android:verticalSpacing="8px"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_select_item_cancel"
+        android:layout_below="@id/yuguo_service"
+        android:layout_marginTop="8px"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <cn.com.sgcc.dev.view.viewinterface.SideBar
+            android:id="@+id/left_zimu"
+            android:layout_width="34px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/contact_dialog"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_gravity="center"
+            android:layout_marginRight="300px"
+            android:layout_marginTop="288px"
+            android:layout_toLeftOf="@+id/left_zimu"
+            android:background="@color/color_main"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="33px"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="没有更多啦……"
+            android:textColor="@color/sbc_page_number_text"
+            android:textSize="20px"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_select_item_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#FF333333"
+        android:textSize="16px"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+def apk_time() {
+    return new Date().format("yyyyMMDD", TimeZone.getDefault())
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'devicepro'
+            keyPassword 'devicepro'
+            storeFile file('devicepro.jks')
+            storePassword 'devicepro'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId "cn.com.sgcc.dev"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName 'V2.1.0'
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        //build release 版本时开启lint检测
+        checkReleaseBuilds false
+        //lint 遇到 error 时继续 构建
+        abortOnError false
+    }
+    //为了解决部分第三方库重复打包了META-INF的问题
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    greendao {
+        schemaVersion 1
+        daoPackage 'cn.com.sgcc.dev.dao2'
+        targetGenDir 'src/main/java'
+    }
+    //打包后应用名称
+    applicationVariants.all { variant ->
+        //这个修改输出的APK路径
+        if (variant.buildType.name != "debug") {//防止AS无法安装debug包（apk）
+            variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + "/apk")
+        }
+        variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
+            //这个修改输出APK的文件名
+            apkData.outputFileName = "RLST_" +
+                    variant.versionName + ".apk"
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/zxing.jar')
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.0.0-beta.5'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation files('libs/zip4j_1.3.2.jar')
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    //转换器，请求结果转换成Model
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //Gson 库
+    implementation 'com.google.code.gson:gson:2.6.2'
+    //poi相关
+    implementation files('libs/dom4j-1.6.1.jar')
+    implementation files('libs/poi-3.9-20121203.jar')
+    implementation files('libs/poi-ooxml-3.9-20121203.jar')
+    implementation files('libs/poi-ooxml-schemas-3.9-20121203.jar')
+    implementation files('libs/poi-scratchpad-3.9-20121203.jar')
+    implementation files('libs/stax-api-1.0.1.jar')
+    implementation files('libs/xmlbeans-2.3.0.jar')
+    //屏幕适配相关
+    implementation 'com.zhy:autolayout:1.4.5'
+    implementation files('libs/libydmhsdk_0329.jar')
+}

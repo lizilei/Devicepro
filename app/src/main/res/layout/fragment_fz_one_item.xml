@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_fz_one_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_fz_first_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fz_one_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="是否六统一设备"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fz_one_type_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/device_detials_bg"
+                android:gravity="center"
+                android:maxWidth="220dp"
+                android:minWidth="100dp"
+                android:singleLine="true"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fz_first_two"
+            android:layout_width="0dp"
+            android:layout_marginLeft="24dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fz_two_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="厂站名称"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fz_two_type_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/device_detials_bg"
+                android:gravity="center"
+                android:maxWidth="220dp"
+                android:minWidth="100dp"
+                android:singleLine="true"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fz_two_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_fz_second_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fz_three_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="是否六统一设备设备丫"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fz_three_type_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/device_detials_bg"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:maxWidth="220dp"
+                android:minWidth="100dp"
+                android:singleLine="true"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fz_second_two"
+            android:layout_width="0dp"
+            android:layout_marginLeft="24dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fz_four_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="一次设备名称"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fz_four_type_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/device_detials_bg"
+                android:gravity="center"
+                android:maxWidth="220dp"
+                android:minWidth="100dp"
+                android:singleLine="true"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fz_btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/device_detials_bg"
+                android:gravity="center"
+                android:maxWidth="220dp"
+                android:minWidth="100dp"
+                android:text="添加+"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

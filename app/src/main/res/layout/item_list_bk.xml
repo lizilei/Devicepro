@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="38px"
+    android:paddingRight="20px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="板卡型号："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_bkxh"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:layout_height="@dimen/details_right_height"
+            android:gravity="center|start"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="板卡类别："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_bklb"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:layout_height="@dimen/details_right_height"
+            android:gravity="center|start"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="板卡编号："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_bkbh"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/details_right_height"
+            android:gravity="center|start"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="硬件版本："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_yjbb"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:layout_height="@dimen/details_right_height"
+            android:gravity="center|start"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="板卡生成日期："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_bkscrq"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:layout_height="@dimen/details_right_height"
+            android:gravity="center|start"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5px"
+        android:background="@color/divider_color" />
+
+</LinearLayout>

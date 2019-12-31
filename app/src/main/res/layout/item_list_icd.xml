@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/common_margin_left"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICD文件名称："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <EditText
+            android:id="@+id/tv_wjmc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:background="@drawable/device_detials_bg"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICD文件版本："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_wjbb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CRC32验证码："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_crc32"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MD5校验码："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_md5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICD文件最终修改时间："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_wjzzxgsj"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选配功能："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_xpgn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过专业检测时间："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_jcsj"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/details_right_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业检测批次："
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+
+        <TextView
+            android:id="@+id/tv_jcpc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_right_height"
+            android:layout_marginLeft="@dimen/details_right_margin"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/details_right_input_padding"
+            android:textColor="@color/commonly_text_color3"
+            android:textSize="@dimen/common_textSize" />
+    </LinearLayout>
+</LinearLayout>

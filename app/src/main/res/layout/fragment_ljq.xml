@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_ljq_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".view.activity.DeviceDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_ljq_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fragment_item_margin">
+
+            <TextView
+                android:id="@+id/tv_one_device_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:gravity="center_vertical"
+                android:text="连接器数量:"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="@dimen/fragment_item_text_size" />
+
+            <EditText
+                android:id="@+id/et_one_device_right"
+                android:layout_width="match_parent"
+                android:layout_height="36px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/tv_one_device_left"
+                android:background="@drawable/device_detials_bg"
+                android:focusable="true"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="100"
+                android:paddingLeft="6px"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="@dimen/fragment_item_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fragment_item_margin">
+
+            <TextView
+                android:id="@+id/tv_two_device_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:gravity="center_vertical"
+                android:text="连接器插座组件制造厂家:"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="@dimen/fragment_item_text_size" />
+
+            <EditText
+                android:id="@+id/et_two_device_right"
+                android:layout_width="match_parent"
+                android:layout_height="36px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/tv_two_device_left"
+                android:background="@drawable/device_detials_bg"
+                android:focusable="true"
+                android:hint=""
+                android:maxLength="100"
+                android:paddingLeft="6px"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="@dimen/fragment_item_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fragment_item_margin">
+
+            <TextView
+                android:id="@+id/tv_three_device_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:gravity="center_vertical"
+                android:text="连接器插座组件型号:"
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="@dimen/fragment_item_text_size" />
+
+            <EditText
+                android:id="@+id/et_three_device_right"
+                android:layout_width="match_parent"
+                android:layout_height="36px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/tv_three_device_left"
+                android:background="@drawable/device_detials_bg"
+                android:focusable="true"
+                android:hint=""
+                android:maxLength="100"
+                android:paddingLeft="6px"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/commonly_text_color3"
+                android:textSize="@dimen/fragment_item_text_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--添加连接器按钮-->
+    <TextView
+        android:id="@+id/fragment_lv_ljq_add"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_below="@+id/ll_ljq_number"
+        android:background="@color/color_main"
+        android:gravity="center"
+        android:text="添加连接器"
+        android:textColor="@color/share_view"
+        android:textSize="24px" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/fragment_lv_ljq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_bottom"
+        android:layout_below="@+id/fragment_lv_ljq_add"
+        android:background="@color/color_white"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="10px"
+        android:paddingTop="10px"
+        android:textSize="16px" />
+
+</RelativeLayout>
+
+
+
+

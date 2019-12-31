@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.sgcc.dev.customeView.recylerUtil.SwipeItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="平阴站"
+            android:textColor="@color/commonly_text_color6"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_max_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/fengexian"
+            android:text="220KV"
+            android:textColor="@color/commonly_text_color6"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fengexian"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/mark"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_mark"
+            android:text="编辑"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</cn.com.sgcc.dev.customeView.recylerUtil.SwipeItemLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonly_bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+        <View
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/color_main"
+            />
+
+        <include layout="@layout/app_bar_main" />
+
+        <LinearLayout
+            android:id="@+id/app_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:layout_marginTop="2px"
+            android:background="@color/color_white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_bh"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_main"
+                android:text="保护装置设置"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/fengexian"
+                android:layout_width="5px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/divider_color4"
+                android:textSize="24px" />
+
+            <Button
+                android:id="@+id/btn_fz"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:text="辅助装置设置"
+                android:textColor="#999999"
+                android:textSize="24px" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="1px"
+            android:background="@color/color_white">
+
+            <FrameLayout
+                android:id="@+id/fl_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/filter_layout"
+                android:divider="@null"
+                android:padding="2px"
+                android:scrollbars="none"
+                android:orientation="horizontal" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/filter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0px"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/filter_reset"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="24px"
+                        android:textColor="#444444"
+                        android:text="重置" />
+
+                    <TextView
+                        android:id="@+id/filter_sure"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#286F66"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textSize="24px"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>

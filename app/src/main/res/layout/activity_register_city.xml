@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonly_bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/commonly_bg_color"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="36dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/search_bg"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:src="@drawable/icon_search" />
+
+                        <EditText
+                            android:id="@+id/et_search_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="13dp"
+                            android:background="@null"
+                            android:hint="搜索城市名称/拼音首字母"
+                            android:textColor="@color/commonly_text_color9"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="12dp"
+                        android:text="取消"
+                        android:textColor="@color/commonly_text_color6"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+
+            <!-- 结果列表 -->
+            <ListView
+                android:id="@+id/main_countres_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/divider_color"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+            <!-- 选择字母的提示 -->
+            <TextView
+                android:id="@+id/main_countres_show_selected"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="51sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- 边框字母索引框 -->
+        <LinearLayout
+            android:id="@+id/main_countres_index_layout"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/main_countres_index_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="18dp"
+                android:listSelector="#00000000"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

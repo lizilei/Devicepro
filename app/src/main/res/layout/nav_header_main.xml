@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="317px"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="117px"
+        android:layout_height="117px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/icon_user" />
+
+    <TextView
+        android:id="@+id/header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="18px"
+        android:text="用户名"
+        android:textColor="@color/color_white"
+        android:textSize="26px" />
+
+    <TextView
+        android:id="@+id/header_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8px"
+        android:text="登录时间"
+        android:textColor="@color/color_white"
+        android:textSize="26px" />
+
+</LinearLayout>

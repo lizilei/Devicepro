@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <!--暂时不用-->
+    <RelativeLayout
+    android:id="@+id/ll_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shouye"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bdz"
+        android:layout_width="100px"
+        android:layout_height="35px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="193px"
+        android:background="#ff0033"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="变电站列表" />
+
+    <TextView
+        android:id="@+id/zz"
+        android:layout_width="100px"
+        android:layout_height="35px"
+        android:background="#ff0033"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="装置列表"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/bdz"
+        android:layout_alignStart="@+id/bdz" />
+
+    <TextView
+        android:id="@+id/saoyisao"
+        android:layout_width="100px"
+        android:layout_height="35px"
+        android:background="#ff0033"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_below="@+id/zz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45px"
+        android:text="扫一扫"
+        android:textSize="20px"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100px"
+        android:layout_height="35px"
+        android:background="#ff0033"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_below="@+id/saoyisao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41px"
+        android:text="我的" />
+
+
+
+</RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="506px"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/color_white"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/commonly_text_color3"
+        app:itemBackground="@color/color_white"
+        app:itemTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:headerLayout="@layout/nav_header_mains"
+        app:menu="@menu/activity_main_drawers" />
+
+</android.support.v4.widget.DrawerLayout>

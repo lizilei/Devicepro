@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <group android:id="@+id/g1">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/daochu"
+            android:title="导出" />
+    </group>
+    <group android:id="@+id/g7">
+        <item
+            android:id="@+id/nav_data_changge"
+            android:icon="@drawable/guanyu"
+            android:title="更换数据" />
+    </group>
+    <group android:id="@+id/g8">
+        <item
+            android:id="@+id/nav_data_store"
+            android:icon="@drawable/guanyu"
+            android:title="数据备份" />
+    </group>
+    <group android:id="@+id/g9">
+        <item
+            android:id="@+id/nav_data_restore"
+            android:icon="@drawable/guanyu"
+            android:title="数据还原" />
+
+    </group>
+
+    <group android:id="@+id/jy2">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/print_setting"
+            android:title="设置" />
+    </group>
+
+    <group android:id="@+id/g4">
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/tuichu"
+
+            android:title="退出登录" />
+    </group>
+
+
+</menu>

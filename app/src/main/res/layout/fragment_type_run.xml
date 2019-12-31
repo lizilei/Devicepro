@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:id="@+id/Scrollview_run"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:layout_marginTop="15px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin"
+                >
+
+                <TextView
+                    android:id="@+id/tv_one_device_name_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="套别:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_name_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_name_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_one"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_name_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_name_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint="请输入设备识别代码,数字和字母组合"
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="数字和字母组合"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_two_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="装置电源电压:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_two_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_two_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text="平阴站220kV#主变暂无母线保护装置"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_two_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_two_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint="请输入设备识别代码,数字和字母组合"
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="2013版"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_three_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="设备状态:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_three_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_three_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_three"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                     />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_three_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_three_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint="请输入设备识别代码,数字和字母组合"
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="国电南瑞"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_four_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="数据采集方式:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_four_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_four_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_four"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:textColor="@color/commonly_text_color3"
+                    android:text=""
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_four_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_four_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint="请输入设备识别代码,数字和字母组合"
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="变压器保护"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_five_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="出口方式:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_five_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_five_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_five"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:textColor="@color/commonly_text_color3"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_five_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_five_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="暂无"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_six_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="定期检验周期:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_six_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_six_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text="平阴站220kV#主变暂无母线保护装置"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_six_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_six_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:hint="@string/hint3"
+                    android:maxLength="5"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_seven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_seven_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="设备增加方式:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_seven_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_seven_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                     />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_seven_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_seven_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="暂无"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_eight_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="退运日期:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_eight_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eight_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_eight"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_eight_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eight_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="暂无"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_eight"
+                    android:layout_width="26px"
+                    android:layout_height="26px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/datepick"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_nine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_nine_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="跳闸关系:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_nine_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_nine_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_nine"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="visible"
+                    android:id="@+id/et_one_device_nine_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_nine_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_nine"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="100"
+                    android:padding="6px"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_ten_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="名称属性:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_ten_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_ten_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_ten"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_ten_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_ten_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="暂无"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_eleven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_eleven_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="统计运行时间:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <CheckBox
+                    android:id="@+id/cb_end_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eleven_left"
+                    android:text=""
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_eleven_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eleven_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text="平阴站220kV#主变暂无母线保护装置"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_eleven_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eleven_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="暂无"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_eleven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_twelve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_twelve_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="上次检修时间:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_twelve_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_twelve_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_twelve"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_twelve_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_twelve_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="暂无"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_twelve"
+                    android:layout_width="26px"
+                    android:layout_height="26px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/datepick"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_thirteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_thirteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="电源插件型号:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_thirteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_thirteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_thirteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_thirteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="20"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_thirteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_fourteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_fourteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="电源插件更换日期:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_fourteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_fourteen_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_fourteen"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_fourteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_fourteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text="暂无"
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_fourteen"
+                    android:layout_width="26px"
+                    android:layout_height="26px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/datepick"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fifteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_fifteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="数字通道数:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_fifteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_fifteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text="平阴站220kV#主变暂无母线保护装置"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_fifteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_fifteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:hint=""
+                    android:maxLength="6"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_fifteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_sixteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="模拟通道数:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_sixteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_sixteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6px"
+                    android:text="平阴站220kV#主变暂无母线保护装置"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_sixteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_sixteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:hint=""
+                    android:maxLength="6"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_sixteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:textSize="16px" />
+
+</LinearLayout>

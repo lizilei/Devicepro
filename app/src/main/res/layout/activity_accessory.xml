@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginRight="20px"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_marginTop="@dimen/details_right_top_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="定值单信息"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/common_textSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/details_right_top_margin"
+                    android:background="@color/divider_color2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:text="图片"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="16px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/acce_recyclerView1"
+                        android:layout_width="0px"
+                        android:layout_height="80px"
+                        android:layout_weight="1"
+                        android:scrollbars="none" />
+
+                    <ImageView
+                        android:id="@+id/iv_dzd"
+                        android:layout_width="60px"
+                        android:layout_height="80px"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="12px"
+                        android:src="@drawable/icon_addpic_focused" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:text="文档"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="16px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/acce_recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginRight="20px"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_marginTop="@dimen/details_right_top_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="压板信息"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/common_textSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/details_right_top_margin"
+                    android:background="@color/divider_color2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:text="图片"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="16px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/acce_recyclerView3"
+                        android:layout_width="0px"
+                        android:layout_height="80px"
+                        android:layout_weight="1"
+                        android:scrollbars="none" />
+
+                    <ImageView
+                        android:id="@+id/iv_ybxx"
+                        android:layout_width="60px"
+                        android:layout_height="80px"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="12px"
+                        android:src="@drawable/icon_addpic_focused" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:text="文档"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="16px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/acce_recyclerView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <!--<cn.com.sgcc.dev.customeView.MyExpListView-->
+            <!--android:id="@+id/exp_listView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="10px"-->
+            <!--android:background="@color/color_white" />-->
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_details10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="10px"
+        android:paddingTop="10px"
+        android:textSize="16px" />
+</LinearLayout>

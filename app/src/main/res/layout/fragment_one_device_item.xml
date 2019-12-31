@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_device_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.DeviceDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/fragment_one_device_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fragment_one_device_item_one_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="是否六统一设备"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/fragment_one_device_item_one_select_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_one_device_item_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fragment_one_device_item_two_left_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="是否六统一设备"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/fragment_one_device_item_two_left_select_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fragment_one_device_item_two_right_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="是否六统一设备"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:id="@+id/fragment_one_device_item_two_right_select_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_one_device_item_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fragment_one_device_item_three_left_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="是否六统一设备"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/fragment_one_device_item_three_left_select_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fragment_one_device_item_three_right_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="是否六统一设备"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/fragment_one_device_item_three_right_select_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fragment_one_device_item_three_bottom_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="是否六统一设备"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/fragment_one_device_item_three_bottom_select_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/fragment_one_device_item_bottom_three_right_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="是否六统一设备"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/fragment_one_device_item_bottom_three_right_select_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/fragment_one_device_item_three_right_add_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/device_detials_bg"
+                    android:gravity="center"
+                    android:maxWidth="220dp"
+                    android:minWidth="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="添加+"
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

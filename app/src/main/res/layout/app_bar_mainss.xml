@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_main"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/app_toolbar_left"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:padding="22px"
+                android:gravity="center"
+                android:src="@drawable/white_backs" />
+
+            <TextView
+                android:id="@+id/app_toolbar_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="16px"
+                android:text="装置列表"
+                android:textColor="#ffffff"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/addTZXX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:paddingRight="16px"
+                android:text="新增"
+                android:textColor="@color/color_white"
+                android:textSize="24px"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/app_toolbar_sao"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:padding="22px"
+                android:src="@drawable/delete_edittexts" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/app_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:orientation="horizontal"
+            android:layout_marginBottom="19px"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="66px"
+                android:layout_marginLeft="10px"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="14px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/icon_searchs" />
+
+                <cn.com.sgcc.dev.view.viewinterface.MFCleanEditText
+                    android:id="@+id/app_search_edit"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="请输入装置名称"
+                    android:padding="14px"
+                    android:textColorHint="#999999"
+                    android:textSize="26px" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/device_detials_bg"
+                android:text="确认"
+                android:textSize="16px"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_filter"
+                android:layout_width="90px"
+                android:layout_height="66px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/device_detials_bg"
+                android:text="筛选"
+                android:textColor="#999999"
+                android:textSize="26px" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

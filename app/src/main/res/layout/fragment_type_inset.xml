@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:layout_marginTop="15px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_name_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="所属间隔:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_name_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_name_left"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="16px"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_name_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_name_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_jgms"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_jglx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fragment_item_margin">
+
+                    <TextView
+                        android:id="@+id/tv_jglx_device_name_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:text="间隔类型:"
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_jglx_device_name_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_jglx_device_name_left"
+                        android:layout_toLeftOf="@+id/fragment_add_bt_jglx"
+                        android:background="@drawable/device_detials_bg"
+                        android:gravity="center_vertical"
+                        android:padding="6px"
+                        android:text=""
+                        android:hint="@string/hint1"
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size" />
+
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/et_jglx_device_name_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="36px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_jglx_device_name_left"
+                        android:background="@drawable/device_detials_bg"
+                        android:focusable="true"
+                        android:hint=""
+                        android:maxLength="80"
+                        android:paddingLeft="6px"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size" />
+
+                    <Button
+                        android:id="@+id/fragment_add_bt_jglx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/right_arrow_icon"
+                        android:gravity="center"
+                        android:maxWidth="50px"
+                        android:minWidth="50px"
+                        android:padding="5px"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_jgmc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fragment_item_margin">
+
+                    <TextView
+                        android:id="@+id/tv_jgmc_device_name_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:text="间隔名称:"
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_jgmc_device_name_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_jgmc_device_name_left"
+                        android:background="@drawable/device_detials_bg"
+                        android:gravity="center_vertical"
+                        android:padding="6px"
+                        android:text=""
+                        android:hint="@string/hint1"
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size" />
+
+
+                    <EditText
+                        android:id="@+id/et_jgmc_device_name_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="36px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_jgmc_device_name_left"
+                        android:layout_toLeftOf="@+id/fragment_add_bt_jgmc"
+                        android:background="@drawable/device_detials_bg"
+                        android:focusable="true"
+                        android:hint="@string/hint2"
+                        android:maxLength="80"
+                        android:paddingLeft="6px"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size" />
+
+                    <Button
+                        android:id="@+id/fragment_add_bt_jgmc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/right_arrow_icon"
+                        android:gravity="center"
+                        android:maxWidth="50px"
+                        android:minWidth="50px"
+                        android:padding="5px"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/commonly_text_color3"
+                        android:textSize="@dimen/fragment_item_text_size"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_two_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="一次设备类型:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_two_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_two_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_two"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <Button
+                    android:id="@+id/fragment_add_bt_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_three_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="一次设备名称:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_three_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_three_left"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textSize="16px"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_three_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_three_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_three"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint2"
+                    android:maxLength="80"
+                    android:padding="6px"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_four_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="电压等级:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_four_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_four_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_four"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_four_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_four_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_five_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="单位名称:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_five_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_five_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_five"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_five_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_five_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_six_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="调度单位:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_six_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_six_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_six"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_six_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_six_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_seven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_seven_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="保护小室名称:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_seven_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_seven_left"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textSize="16px"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_seven_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_seven_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_eight_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="所属屏柜:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_eight_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eight_left"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textSize="16px"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_eight_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eight_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="40"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_enight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_nine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_nine_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="投运日期:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_nine_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_nine_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_nine"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_nine_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_nine_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_nine"
+                    android:layout_width="26px"
+                    android:layout_height="26px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/datepick"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_ten_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="运检单位:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_ten_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_ten_left"
+                    android:text=""
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_ten_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_ten_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_eleven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_eleven_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="运维班组:"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_eleven_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eleven_left"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textSize="16px"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_eleven_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_eleven_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_twelve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_twelve_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="检修班组:"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_twelve_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_twelve_left"
+                    android:paddingLeft="6px"
+                    android:text=""
+                    android:textSize="16px"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/et_one_device_twelve_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_twelve_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_thirteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_thirteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="设计单位:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_thirteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_thirteen_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_thirteen"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_thirteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_thirteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_thirteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_fourteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_fourteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="基建单位:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_fourteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_fourteen_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_fourteen"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_fourteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_fourteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_fourteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fifteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_fifteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="运行单位:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_fifteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_fifteen_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_fifteen"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_fifteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_fifteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_fifteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_sixteen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="维护单位:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_sixteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_sixteen_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_sixteen"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_sixteen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_sixteen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_sixteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_seventeen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_item_margin">
+
+                <TextView
+                    android:id="@+id/tv_one_device_seventeen_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="设备属性:"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_one_device_seventeen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:paddingLeft="6px"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/device_detials_bg"
+                    android:layout_toRightOf="@+id/tv_one_device_seventeen_left"
+                    android:layout_toLeftOf="@+id/fragment_add_bt_seventeen"
+                    android:text=""
+                    android:hint="@string/hint1"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_one_device_seventeen_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_one_device_seventeen_left"
+                    android:background="@drawable/device_detials_bg"
+                    android:focusable="true"
+                    android:hint=""
+                    android:maxLength="500"
+                    android:paddingLeft="6px"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sbc_page_number_text"
+                    android:textSize="@dimen/fragment_item_text_size" />
+
+                <Button
+                    android:id="@+id/fragment_add_bt_seventeen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/right_arrow_icon"
+                    android:gravity="center"
+                    android:maxWidth="50px"
+                    android:minWidth="50px"
+                    android:padding="5px"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/commonly_text_color3"
+                    android:textSize="@dimen/fragment_item_text_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:textSize="16px" />
+
+</LinearLayout>

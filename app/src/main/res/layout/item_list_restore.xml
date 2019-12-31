@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.sgcc.dev.customeView.recylerUtil.SwipeItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_main_restore"
+        android:layout_height="70dp">
+
+        <CheckBox
+            android:id="@+id/cb_choose_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px" />
+
+        <TextView
+            android:id="@+id/tv_name_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cb_choose_restore"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/cb_choose_restore"
+            android:textColor="@color/commonly_text_color6"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/delete_restore"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</cn.com.sgcc.dev.customeView.recylerUtil.SwipeItemLayout>
